@@ -33,7 +33,3 @@ Você pode baixar diretamente o zip do projeto usando os links abaixo:
 ## 🛠️ Abrir e rodar o projeto
 
 Para instalar o React Native e o ambiente nativo na sua máquina siga os passos do [artigo de configuração de ambiente](https://www.alura.com.br/artigos/configurando-o-ambiente-react-native).
-
-## 📚 Mais informações do curso
-
-Aguardando link
