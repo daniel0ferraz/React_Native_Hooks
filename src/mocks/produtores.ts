@@ -5,11 +5,11 @@ import grow from '../assets/produtores/grow.png';
 import potager from '../assets/produtores/potager.png';
 
 type Numbers = {
-  min: number;
-  max: number;
+  min?: number | undefined;
+  max?: number | undefined;
 };
 
-const gerarNumeroAleatorio = ({min, max}: Numbers) => {
+const gerarNumeroAleatorio = ({min, max}: any) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
@@ -48,3 +48,5 @@ const produtores = {
     },
   ],
 };
+
+export default produtores;

@@ -1,7 +1,7 @@
 import React from 'react';
 
+import {CarregaHeader} from '../../services';
 import logo from '../../assets/logo.png';
-
 import * as Styled from './styles';
 
 export default function Header() {
@@ -9,7 +9,7 @@ export default function Header() {
     <Styled.Container>
       <Styled.Image source={logo} />
       <Styled.Title>Olá, Daniel</Styled.Title>
-      <Styled.Legend>Encontre os melhores produtoreszsh</Styled.Legend>
+      <Styled.Legend>Encontre os melhores produtores</Styled.Legend>
     </Styled.Container>
   );
 }

@@ -15,9 +15,11 @@ export const Title = styled.Text`
   font-size: 26px;
   line-height: 42px;
   font-weight: bold;
+  color: #464646;
 `;
 
 export const Legend = styled.Text`
   font-size: 16px;
   line-height: 26px;
+  color: #a3a3a3;
 `;
