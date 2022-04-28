@@ -1,25 +1,22 @@
 import React, {useEffect, useState} from 'react';
 import {FlatList, View} from 'react-native';
+import useProdutores from '../../hooks/useProdutores';
 
 import Produtor from '../Produtor';
-import {carregaProdutores} from '../../services';
 import * as Styled from './styles';
 
-type Props = {
-  titulo: [] | string;
-};
-
 export default function Produtores({header: Header}) {
-  const [titulo, setTitulo] = useState<Props[]>([]);
-  const [lista, setLista] = useState([]);
+  const [titulo, lista] = useProdutores();
+  // const [titulo, setTitulo] = useState<Props[]>([]);
+  // const [lista, setLista] = useState([]);
 
-  useEffect(() => {
-    // executa uma vez quando o componente é montado
-    const retorno = carregaProdutores();
-    setTitulo(retorno.titulo);
-    setLista(retorno.lista);
-    console.log(retorno);
-  }, []);
+  // useEffect(() => {
+  //   // executa uma vez quando o componente é montado
+  //   const retorno = carregaProdutores();
+  //   setTitulo(retorno.titulo);
+  //   setLista(retorno.lista);
+  //   console.log(retorno);
+  // }, []);
 
   const HeaderList = () => {
     return (
